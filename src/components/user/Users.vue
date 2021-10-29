@@ -426,7 +426,7 @@ export default {
 
     /* 时间格式化 */
     formatrDate(value) {
-      let dataValue = this.$moment(value.create_time * 1000).format(
+      let dataValue = this.dayjs(value.create_time * 1000).format(
         "YYYY-MM-DD HH:mm:ss"
       );
       return dataValue;

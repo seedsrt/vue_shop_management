@@ -4,7 +4,6 @@ import router from './router'
 //import ElementUI from 'element-ui'
 import './assets/css/global.css'
 import './assets/font/iconfont.css'
-//import moment from 'moment'
 import axios from 'axios'
 import TreeTable from 'vue-table-with-tree-grid'
 import VueQuillEditor from 'vue-quill-editor'
@@ -24,8 +23,8 @@ axios.interceptors.response.use(config => {
   NProgress.done();
   return config
 })
+Vue.prototype.dayjs = dayjs;
 Vue.prototype.$http = axios
-Vue.prototype.$moment = moment;
 Vue.config.productionTip = false
 
 Vue.component('tree-table',TreeTable)

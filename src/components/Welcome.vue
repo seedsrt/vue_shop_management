@@ -29,15 +29,11 @@ export default {
   },
   created() {
     this.user = window.sessionStorage.getItem("User");
-    this.nowtime = this.$moment()
-      .locale("zh-cn")
-      .format("MMMM Do YYYY, h:mm:ss a");
+    this.nowtime = this.dayjs().format("YYYY-MM-DD HH:mm:ss");
   },
   methods: {
     getTime() {
-      this.nowtime = this.$moment()
-        .locale("zh-cn")
-        .format("MMMM Do YYYY, h:mm:ss a");
+      this.nowtime = this.dayjs().format("YYYY-MM-DD HH:mm:ss");
     },
     currentTime() {
       setInterval(this.getTime, 1000);

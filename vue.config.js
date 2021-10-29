@@ -19,7 +19,8 @@ module.exports = {
                 'element-ui': 'ELEMENT',
                 'element-ui': 'element-ui',
                 'element-ui': 'ELEMENT',
-                'moment': 'moment'
+                'moment': 'moment',
+                'dayjs': 'dayjs'
             })
 
             //新增自定义属性
